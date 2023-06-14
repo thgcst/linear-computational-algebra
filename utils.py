@@ -97,3 +97,7 @@ def get_biggest_superior_element(matrix):
         biggest_j = j
   
   return biggest, biggest_i, biggest_j
+
+def derivative(function, x):
+  delta = 1e-10
+  return (function(x+delta) - function(x))/delta
