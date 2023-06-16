@@ -1,4 +1,3 @@
-import numpy as np
 from utils import derivative
 
 TOL = 1e-4
