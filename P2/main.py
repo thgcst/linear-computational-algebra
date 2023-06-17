@@ -8,7 +8,6 @@ class Task1:
         print("╔════════════╗")
         print("║   Task 1   ║")
         print("╚════════════╝")
-        pass
 
     def exercise_1(self):
         print("Exercício 1")
@@ -123,6 +122,51 @@ class Task2:
 
         print("")
 
+    def exercise_1_differentiation(self):
+        print("Exercício 1 - Diferenciação numérica")
+
+        def f(x):
+            return x**3 + math.exp(-x)
+
+        print("\t1) a)Derivada central (delta=0.1): ", central_derivative(f, 3, 0.1))
+        print(
+            "\t     Derivada central (delta=0.001): ", central_derivative(f, 3, 0.001)
+        )
+        print("\t   b)Passo à frente (delta=0.1): ", forward_derivative(f, 3, 0.1))
+        print("\t     Passo à frente (delta=0.001): ", forward_derivative(f, 3, 0.001))
+        print("\t   c)Passo atrás (delta=0.1): ", backward_derivative(f, 3, 0.1))
+        print("\t     Passo atrás (delta=0.001): ", backward_derivative(f, 3, 0.001))
+
+        def f(x):
+            return x ** (1 / 3) + math.log(x)
+
+        print("\t2) a)Derivada central (delta=0.1): ", central_derivative(f, 3, 0.1))
+        print(
+            "\t     Derivada central (delta=0.001): ", central_derivative(f, 3, 0.001)
+        )
+        print("\t   b)Passo à frente (delta=0.1): ", forward_derivative(f, 3, 0.1))
+        print("\t     Passo à frente (delta=0.001): ", forward_derivative(f, 3, 0.001))
+        print("\t   c)Passo atrás (delta=0.1): ", backward_derivative(f, 3, 0.1))
+        print("\t     Passo atrás (delta=0.001): ", backward_derivative(f, 3, 0.001))
+
+        def f(x):
+            return 1 - math.exp(-((x / 5) ** 2))
+
+        print("\t3) a)Derivada central (delta=0.1): ", central_derivative(f, 3, 0.1))
+        print(
+            "\t     Derivada central (delta=0.001): ", central_derivative(f, 3, 0.001)
+        )
+        print("\t   b)Passo à frente (delta=0.1): ", forward_derivative(f, 3, 0.1))
+        print("\t     Passo à frente (delta=0.001): ", forward_derivative(f, 3, 0.001))
+        print("\t   c)Passo atrás (delta=0.1): ", backward_derivative(f, 3, 0.1))
+        print("\t     Passo atrás (delta=0.001): ", backward_derivative(f, 3, 0.001))
+
+    def exercise_2_differentiation(self):
+        pass
+
+    def exercise_3_differentiation(self):
+        pass
+
 
 task1 = Task1()
 task1.exercise_1()
@@ -132,3 +176,6 @@ task2 = Task2()
 task2.exercise_5()
 task2.exercise_6()
 task2.exercise_7()
+task2.exercise_1_differentiation()
+task2.exercise_2_differentiation()
+task2.exercise_3_differentiation()
